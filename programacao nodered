@@ -1,0 +1,5 @@
+minicom-s 
+
+sudo chmod 777 nodered.sh
+
+./nodered.sh
