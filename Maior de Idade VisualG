@@ -1,0 +1,32 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 06/03/2024
+Var
+// Seção de Declarações das variáveis
+
+   idade: inteiro
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+
+   ESCREVAL ("QUAL SUA IDADE?")
+   ESCREVAL (" ")
+   LEIA (idade)
+
+   Se (idade>18) entao
+      ESCREVAL (" ")
+      EscrevaL ("VOCÊ É MAIOR DE IDADE")
+      ESCREVAL (" ")
+      
+     Senao
+          ESCREVAL (" ")
+          EscrevaL ("VOCÊ É MENOR DE IDADE")
+          ESCREVAL (" ")
+          Fimse
+          
+Fimalgoritmo
