@@ -1,1 +1,21 @@
+   idade: inteiro
+   anoatual: inteiro
+   nascimento: inteiro
+   
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
 
+
+   ESCREVAL ("QUAL O ANO ATUAL?")
+   ESCREVAL (" ")
+   LEIA (anoatual)
+   ESCREVAL (" ")
+   ESCREVAL ("E QUAL SUA IDADE?")
+   ESCREVAL (" ")
+   LEIA (idade)
+   nascimento <- anoatual - idade
+   ESCREVAL ("-------------------------------------------------------------")
+   ESCREVAL ("Você nasceu em:",nascimento, " ." )
+   ESCREVAL ("-------------------------------------------------------------")
+   
+Fimalgoritmo
