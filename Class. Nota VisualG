@@ -1,0 +1,66 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 11/03/2024
+Var
+// Seção de Declarações das variáveis
+
+nota1: real
+nota2: real
+nota3: real
+resultado: real
+classificacao: caractere
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+Escreval ("Vamos calcular a sua média: ")
+
+Escreval ("Escreva sua primeira nota:")
+leia (nota1)
+
+     Se (nota1 > 10)entao
+     Escreval ("Sua nota deve ser de 0 a 10:")
+     leia (nota1)
+     fimse
+
+Escreval ("Escreva sua segunda nota:")
+leia (nota2)
+
+     Se (nota2 > 10)  entao
+     Escreval ("Sua nota deve ser de 0 a 10:")
+     leia (nota2)
+     fimse
+
+Escreval ("Escreva sua nota de trabalho:")
+leia (nota3)
+
+     Se (nota3 > 10) entao
+     Escreval ("Sua nota deve ser de 0 a 10:")
+     leia (nota3)
+     fimse
+
+resultado <- (nota1 + nota2 + nota3)/3
+
+Escreva ("Sua média é: ", resultado, " sua classificação é: ")
+
+     Se (resultado < 5) entao
+     classificacao <- "Insuficiente"
+     escreval (classificacao)
+     Senao
+          Se (resultado < 7) entao
+          classificacao <- "Regular"
+          escreval (classificacao)
+          Senao
+              Se (resultado < 9) entao
+              classificacao <- "Bom"
+              escreval (classificacao)
+              senao
+              classificacao <- "Muito Bom"
+              escreval (classificacao)
+              fimse
+          fimse
+     fimse
+Fimalgoritmo
