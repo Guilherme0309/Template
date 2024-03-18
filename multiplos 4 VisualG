@@ -1,0 +1,18 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+
+Var
+// Seção de Declarações das variáveis 
+x: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+Para x de 1 ate 40 faca
+     Se (x mod 4 = 0) entao
+        Escreval ("pim")
+     Senao
+          Escreval (x)
+     Fimse
+Fimpara
+
+Fimalgoritmo
