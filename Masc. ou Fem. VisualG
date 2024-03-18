@@ -1,0 +1,67 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :
+// Autor(a)    : Guilherme Ataide Pires
+// Data atual  : 18/03/2024
+Var
+
+nome: caractere
+idade: inteiro
+x: inteiro
+total: inteiro
+gnr: inteiro
+Masc: inteiro
+Fem: inteiro
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+Para x de 1 ate 6 faca
+
+     //nome
+     Escreval ("Qual seu nome?")
+     Leia (nome)
+     Escreval(" ")
+     
+     //Idade
+     Escreval ("Qual sua idade?")
+     Leia (idade)
+     Escreval(" ")
+     total <- total + idade
+     
+     //Genero
+     Escreval ("Qual seu Genêro?")
+     Escreval ("1: Masculino.")
+     Escreval ("2: Feminino")
+     Leia (gnr)
+     Se (gnr < 2) entao
+     Masc <- Masc + idade
+     //Resultado
+     Escreval(" ")
+     Escreval(x, "°) Nome: ", nome)
+     Escreval(" Idade: ", idade, " anos")
+     Escreval("Genêro: Masculino")
+     Escreval(" ")
+     Senao
+          Se (gnr < 3) entao
+          Fem <- Fem + idade
+          //Resultado
+          Escreval(" ")
+          Escreval(x, "°) Nome: ", nome)
+          Escreval(" Idade: ", idade, " anos")
+          Escreval("Genêro: Masculino")
+          Escreval(" ")
+          Senao
+          Escreval ("Resposta incorreta. Tente Novamente.")
+          Leia (gnr)
+          fimse
+     fimse
+
+
+Fimpara
+
+//soma
+Escreval ("A soma das idades dos homens é de ", Masc)
+Escreval ("A soma das idades das mulheres é de ", Fem)
+
+Fimalgoritmo
