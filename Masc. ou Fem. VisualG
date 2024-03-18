@@ -34,8 +34,11 @@ Para x de 1 ate 6 faca
      Escreval ("1: Masculino.")
      Escreval ("2: Feminino")
      Leia (gnr)
+     
+     //masculino
      Se (gnr < 2) entao
      Masc <- Masc + idade
+     
      //Resultado
      Escreval(" ")
      Escreval(x, "°) Nome: ", nome)
@@ -43,15 +46,20 @@ Para x de 1 ate 6 faca
      Escreval("Genêro: Masculino")
      Escreval(" ")
      Senao
+
+          //feminino
           Se (gnr < 3) entao
           Fem <- Fem + idade
+          
           //Resultado
           Escreval(" ")
           Escreval(x, "°) Nome: ", nome)
           Escreval(" Idade: ", idade, " anos")
           Escreval("Genêro: Masculino")
           Escreval(" ")
-          Senao
+          
+          //TENTE NOVAMENTE
+          Senao  //Se gnr for diferente de 1 ou 2
           Escreval ("Resposta incorreta. Tente Novamente.")
           Leia (gnr)
           fimse
