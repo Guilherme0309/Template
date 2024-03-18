@@ -1,0 +1,30 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+
+Var
+// Seção de Declarações das variáveis 
+x: inteiro
+continuar: caractere
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+continuar <- "s"
+x <- 1
+
+Enquanto continuar = "s" faca
+          Escreva (x)
+
+          Se (x mod 2 = 0) entao
+             Escreval (" - PAR")
+          Senao
+          Escreval (" - IMPAR")
+          Fimse
+          Escreval ("Deseja continuar? [s/n]")
+          Leia (continuar)
+          Se (continuar = "s") entao
+             x <- x + 1
+          Fimse
+          
+Fimenquanto
+
+Fimalgoritmo
