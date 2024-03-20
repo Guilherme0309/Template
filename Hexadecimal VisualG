@@ -4,8 +4,7 @@ Algoritmo "semnome"
 Var
 // Seção de Declarações das variáveis
 decimal: inteiro
-hexa1: caractere
-hexa2: caractere
+
 cociente: inteiro
 cociente2: inteiro
 resto1: inteiro
@@ -15,6 +14,12 @@ Inicio
 
 Escreval ("Escreva um número decimal para tranformá-lo em Hexadecimal:")
 Leia (decimal)
+
+Se (decimal > 999) entao
+Escreval ("Digite apenas até 999")
+Leia (decimal)
+Fimse
+
 Escreval (" ")
 Escreval ("Seu resultado em forma Hexadecimal é:")
 
@@ -27,19 +32,20 @@ resto1 <- decimal mod 16
 
 Se (cociente > 15) entao
 
-resto2  <- cociente mod 16
-cociente2 <- cociente div 16
-
-Senao
+  resto2  <- cociente mod 16
+  cociente2 <- cociente div 16
 Fimse
 
 //Tradução para letras
 
 //cociente
-
+Se (cociente < 1) entao
+ escreva (" ")
+ Senao
 Se (cociente < 10)  entao
  escreva (cociente)
 Fimse
+fimse
 
 Se (cociente = 10)  entao
  escreva ("A")
@@ -67,10 +73,14 @@ Fimse
 
 //cociente2
 
+Se (cociente2 < 1) entao
+ escreva (" ")
+ Senao
 Se (cociente2 < 10)  entao
  escreva (cociente2)
 Fimse
- 
+Fimse
+
 Se (cociente2 = 10)  entao
  escreva ("A")
 Fimse
@@ -97,8 +107,12 @@ Fimse
 
 //resto2
 
+Se (resto2 < 1) entao
+ escreva (" ")
+ Senao
 Se (resto2 < 10)  entao
  escreva (resto2)
+Fimse
 Fimse
  
 Se (resto2 = 10)  entao
@@ -127,8 +141,12 @@ Fimse
 
 //resto1
 
+Se (cociente < 1) entao
+ escreva (" ")
+ Senao
 Se (resto1 < 10)  entao
  escreva (resto1)
+Fimse
 Fimse
  
 Se (resto1 = 10)  entao
