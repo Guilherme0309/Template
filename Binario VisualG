@@ -1,0 +1,37 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+
+Var
+// Seção de Declarações das variáveis
+decimal: inteiro
+resultado: caractere
+guardavalor: inteiro
+
+Inicio
+
+Escreval ("Digite um número:")
+Leia (decimal)
+Escreval (" ")
+Escreva ("Seu resultado em Binario é: ")
+
+
+Enquanto decimal > 0 faca
+
+ Se (decimal mod 2)= 0 entao
+ 
+ resultado <- "0" + resultado
+ 
+ Senao
+ 
+ resultado <- "1" + resultado
+ 
+ fimse
+ 
+ decimal <- decimal div 2
+ 
+ fimenquanto
+
+ escreva (resultado)
+
+
+Fimalgoritmo
