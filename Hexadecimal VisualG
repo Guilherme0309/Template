@@ -1,0 +1,158 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+
+Var
+// Seção de Declarações das variáveis
+decimal: inteiro
+hexa1: caractere
+hexa2: caractere
+cociente: inteiro
+cociente2: inteiro
+resto1: inteiro
+resto2: inteiro
+
+Inicio
+
+Escreval ("Escreva um número decimal para tranformá-lo em Hexadecimal:")
+Leia (decimal)
+Escreval (" ")
+Escreval ("Seu resultado em forma Hexadecimal é:")
+
+//Contas
+
+cociente <- decimal div 16
+resto1 <- decimal mod 16
+
+//Se precisar dividir novamente:
+
+Se (cociente > 15) entao
+
+resto2  <- cociente mod 16
+cociente2 <- cociente div 16
+
+Senao
+Fimse
+
+//Tradução para letras
+
+//cociente
+
+Se (cociente < 10)  entao
+ escreva (cociente)
+Fimse
+
+Se (cociente = 10)  entao
+ escreva ("A")
+Fimse
+
+Se (cociente = 11)  entao
+  escreva ("B")
+Fimse
+
+Se (cociente = 12) entao
+  escreva ("C")
+Fimse
+
+Se (cociente = 13)  entao
+  escreva ("D")
+Fimse
+
+Se (cociente = 14) entao
+  escreva ("E")
+Fimse
+
+Se (cociente = 15) entao
+  escreva ("F")
+Fimse
+
+//cociente2
+
+Se (cociente2 < 10)  entao
+ escreva (cociente2)
+Fimse
+ 
+Se (cociente2 = 10)  entao
+ escreva ("A")
+Fimse
+
+Se (cociente2 = 11)  entao
+  escreva ("B")
+Fimse
+
+Se (cociente2 = 12) entao
+  escreva ("C")
+Fimse
+
+Se (cociente2 = 13)  entao
+  escreva ("D")
+Fimse
+
+Se (cociente2 = 14) entao
+  escreva ("E")
+Fimse
+
+Se (cociente2 = 15) entao
+  escreva ("F")
+Fimse
+
+//resto2
+
+Se (resto2 < 10)  entao
+ escreva (resto2)
+Fimse
+ 
+Se (resto2 = 10)  entao
+ escreva ("A")
+Fimse
+
+Se (resto2 = 11)  entao
+  escreva ("B")
+Fimse
+
+Se (resto2 = 12) entao
+  escreva ("C")
+Fimse
+
+Se (resto2 = 13)  entao
+  escreva ("D")
+Fimse
+
+Se (resto2 = 14) entao
+  escreva ("E")
+Fimse
+
+Se (resto2 = 15) entao
+  escreva ("F")
+Fimse
+
+//resto1
+
+Se (resto1 < 10)  entao
+ escreva (resto1)
+Fimse
+ 
+Se (resto1 = 10)  entao
+ escreva ("A")
+Fimse
+
+Se (resto1 = 11)  entao
+  escreva ("B")
+Fimse
+
+Se (resto1 = 12) entao
+  escreva ("C")
+Fimse
+
+Se (resto1 = 13)  entao
+  escreva ("D")
+Fimse
+
+Se (resto1 = 14) entao
+  escreva ("E")
+Fimse
+
+Se (resto1 = 15) entao
+  escreva ("F")
+Fimse
+
+Fimalgoritmo
