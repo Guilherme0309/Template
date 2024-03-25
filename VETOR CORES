@@ -1,0 +1,30 @@
+Algoritmo "vetor"
+
+Var
+vetor_cores: vetor [1..100] de caracter
+x: inteiro
+Posicao: inteiro
+vezes: inteiro
+
+Inicio
+
+   x <- 0
+   Posicao <- 1
+   Escreval ("Quantas cores você deseja escrever (Até 100 cores):")
+   Leia (vezes)
+   Escreval (" ")
+
+   ESCREVAL("Digite ", vezes, " Cores:")
+   Enquanto x < vezes faca
+   LEIA(vetor_cores[x+1])
+   x <- x + 1
+   Fimenquanto
+
+   Escreval (" ")
+   ESCREVAL("AS CORES ESCRITAS FORAM:")
+   Enquanto Posicao < vezes + 1 faca
+   Escreval (Posicao, ")", vetor_cores[Posicao])
+   Posicao <- Posicao + 1
+   Fimenquanto
+   
+Fimalgoritmo
