@@ -1,0 +1,94 @@
+Algoritmo "vetor"
+
+Var
+
+par: vetor [1..10] de inteiro
+p: inteiro
+
+impar: vetor [1..10] de inteiro
+i: inteiro
+
+numero: inteiro
+quantidade: inteiro
+x: inteiro
+opcao: inteiro
+ordem : inteiro
+
+Inicio
+
+Escreval ("Quantos números você quer digitar?")
+Leia (quantidade)
+Escreval (" ")
+
+Enquanto x < quantidade faca
+
+x <- x + 1
+Escreval ("Digite o ", x, "° número.")
+Leia (numero)
+Escreval (" ")
+
+   Se (numero mod 2 = 0) entao
+   p <- p + 1
+   par[p] <- numero
+   
+   Senao
+   i <- i + 1
+   impar[i] <- numero
+   Fimse
+   
+Fimenquanto
+
+x <- 0
+
+Escreval ("Qual dos números você quer exibir?")
+Escreval ("1-PAR")
+Escreval ("2-IMPAR")
+Leia (opcao)
+Escreval (" ")
+
+   Se (opcao = 1) entao
+   
+   Escreval ("De qual maneira você quer exibir os números?")
+   Escreval ("1-ORDEM QUE DIGITOU")
+   Escreval ("2-ORDEM INVERSA")
+   Leia (ordem)
+   Escreval (" ")
+
+        SE (ordem = 1) entao
+
+        Para x de p ate 1 faca
+        Escreval (par[x])
+        Fimpara
+
+        Senao
+        Para x de p ate 1 passo -1 faca
+        Escreval (par[x])
+        Fimpara
+
+        Fimse
+
+   Senao
+      
+   Escreval ("De qual maneira você quer exibir os números?")
+   Escreval ("1-ORDEM QUE DIGITOU")
+   Escreval ("2-ORDEM INVERSA")
+   Leia (ordem)
+   Escreval (" ")
+
+        SE (ordem = 1) entao
+
+        Para x de 1 ate i faca
+        Escreval (impar[x])
+        Fimpara
+
+        Senao
+
+        Para x de i ate 1 passo -1 faca
+        Escreval (impar[x])
+        Fimpara
+
+        Fimse
+
+   Fimse
+
+Fimalgoritmo
