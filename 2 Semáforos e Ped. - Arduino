@@ -1,0 +1,143 @@
+// C++ code
+//
+
+int led [10];
+  
+void setup()
+{
+  
+  led [0] = 13;//vermelho 1
+  led [1] = 12;//amarelo 1
+  led [2] = 11;//verde 1
+  led [3] = 10;//Pedestre Verde 1
+  led [4] = 9;//Pedestre Vermelho 1
+  
+  led [5] = 7;//vermelho 2
+  led [6] = 6;//amarelo 2
+  led [7] = 5;//verde 2
+  led [8] = 4;//Pedestre Vermelho 2
+  led [9] = 3;//Pedestre Verde 2
+  
+  pinMode (led [0], OUTPUT);
+  pinMode (led [1], OUTPUT);
+  pinMode (led [2], OUTPUT);
+  pinMode (led [3], OUTPUT);
+  pinMode (led [4], OUTPUT);
+  pinMode (led [5], OUTPUT);
+  pinMode (led [6], OUTPUT);
+  pinMode (led [7], OUTPUT);
+  pinMode (led [8], OUTPUT);
+  pinMode (led [9], OUTPUT);
+}
+
+void loop()
+{
+  //Semaforo 1
+
+ digitalWrite (led[0], LOW); //Vermelho 1 
+ digitalWrite (led[1], LOW); //Amarelo 1
+ digitalWrite (led[2], HIGH);//Verde 1
+ 
+  //Semaforo 2
+ digitalWrite (led[5], HIGH); //Vermelho 2 
+ digitalWrite (led[6], LOW); //Amarelo 2
+ digitalWrite (led[7], LOW);//Verde 2
+  
+  //Pedestre 1 
+  
+  digitalWrite (led[4], HIGH);//P. Vermelho 1
+  digitalWrite (led[3], LOW);//P. Verde 1
+  
+  //Pedestre 2 
+  
+  digitalWrite (led[8], LOW);//P. Vermelho 2
+  digitalWrite (led[9], HIGH);//P. Verde 2
+  
+ delay (4000);
+
+///////////////////////////////////////////////////////////////
+  
+//Semaforo 1
+
+ digitalWrite (led[0], LOW);//Vermelho 1
+ digitalWrite (led[1], HIGH);//Amarelo 1
+ digitalWrite (led[2], LOW);//Verde 1
+
+//Semaforo 2
+  
+ digitalWrite (led[5], HIGH); //Vermelho 2 
+ digitalWrite (led[6], LOW); //Amarelo 2
+ digitalWrite (led[7], LOW);//Verde 2
+  
+//Pedestre 1 
+  
+digitalWrite (led[4], HIGH);//P. Vermelho 1
+digitalWrite (led[3], LOW);//P. Verde 1
+  
+//Pedestre 2 
+  
+digitalWrite (led[9], LOW);//P. Verde 2 
+delay(500);
+digitalWrite (led[9], HIGH);//P. Verde 2 
+delay(500);
+digitalWrite (led[9], LOW);//P. Verde 2 
+delay(500);
+digitalWrite (led[9], HIGH);//P. Verde 2 
+delay(500);
+
+///////////////////////////////////////////////////////////////
+  
+ //Semaforo 1
+
+ digitalWrite (led[0], HIGH);//Vermelho 1
+ digitalWrite (led[1], LOW);//Amarelo 1
+ digitalWrite (led[2], LOW);//Verde 1
+ 
+//Semaforo 2  
+  
+ digitalWrite (led[5], LOW); //Vermelho 2 
+ digitalWrite (led[6], LOW); //Amarelo 2
+ digitalWrite (led[7], HIGH);//Verde 2
+  
+//Pedestre 1 
+  
+digitalWrite (led[4], LOW);//P. Vermelho 1
+digitalWrite (led[3], HIGH);//P. Verde 1
+
+//Pedestre 2 
+  
+digitalWrite (led[8], HIGH);//P. Vermelho 2
+digitalWrite (led[9], LOW);//P. Verde 2
+  
+ delay (4000);
+  
+/////////////////////////////////////////////////////////////// 
+ 
+ //Semaforo 1
+
+ digitalWrite (led[0], HIGH);//Vermelho 1
+ digitalWrite (led[1], LOW);//Amarelo 1
+ digitalWrite (led[2], LOW);//Verde 1
+
+ //Semaforo 2 
+  
+ digitalWrite (led[5], LOW); //Vermelho 2 
+ digitalWrite (led[6], HIGH); //Amarelo 2
+ digitalWrite (led[7], LOW);//Verde 2
+ 
+ //Pedestre 2 
+  
+digitalWrite (led[8], HIGH);//P. Vermelho 2
+digitalWrite (led[9], LOW);//P. Verde 2
+  
+ //Pedestre 1 
+  
+ digitalWrite (led[3], LOW);//P. Verde 1 
+ delay(500);
+ digitalWrite (led[3], HIGH);//P. Verde 1 
+ delay(500);
+  digitalWrite (led[3], LOW);//P. Verde 1 
+ delay(500);
+ digitalWrite (led[3], HIGH);//P. Verde 1 
+ delay(500);
+}
