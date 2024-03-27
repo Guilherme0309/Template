@@ -1,0 +1,64 @@
+// C++ code
+//
+
+int led [5];
+  
+void setup()
+{
+  
+  led [0] = 13;//vermelho
+  led [1] = 12;//amarelo
+  led [2] = 11;//verde
+  led [3] = 10;//Pedestre Verde
+  led [4] = 9;//Pedestre Vermelho
+  
+  pinMode (led [0], OUTPUT);
+  pinMode (led [1], OUTPUT);
+  pinMode (led [2], OUTPUT);
+  pinMode (led [3], OUTPUT);
+  pinMode (led [4], OUTPUT);
+  
+}
+
+void loop()
+{
+  //Semaforo
+
+ digitalWrite (led[0], LOW); //Vermelho
+ digitalWrite (led[1], LOW); //Amarelo
+ digitalWrite (led[2], HIGH);//Verde
+
+ //Pedestre 
+
+ digitalWrite (led[3], LOW); //Verde
+ digitalWrite (led[4], HIGH); //Vermelho
+
+ delay (2000);
+
+//Semaforo
+
+ digitalWrite (led[0], LOW);//Vermelho
+ digitalWrite (led[1], HIGH);//Amarelo
+ digitalWrite (led[2], LOW);//Verde
+
+  //Pedestre 
+
+ digitalWrite (led[3], LOW); //Verde
+ digitalWrite (led[4], HIGH); //Vermelho
+
+ delay (1000);
+
+ //Semaforo
+
+ digitalWrite (led[0], HIGH);//Vermelho
+ digitalWrite (led[1], LOW);//Amarelo
+ digitalWrite (led[2], LOW);//Verde
+
+  //Pedestre 
+
+ digitalWrite (led[3], HIGH); //Verde
+ digitalWrite (led[4], LOW); //Vermelho
+
+ delay (2000);
+
+}
