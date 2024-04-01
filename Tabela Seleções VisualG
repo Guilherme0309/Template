@@ -1,0 +1,80 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+
+Var
+// Seção de Declarações das variáveis
+selecao: vetor [1..5] de caractere
+pontos: vetor [1..5] de inteiro
+gols: vetor [1..5,1..2] de inteiro
+x: inteiro
+resposta: inteiro
+saldo: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+limpatela
+
+selecao[1] <- "BRASIL"
+selecao[2] <- "ARGENTINA"
+selecao[3] <- "ALEMANHA"
+selecao[4] <- "INGLATERRA"
+selecao[5] <- "JAPÃO"
+
+pontos [1] <- 9
+pontos [2] <- 9
+pontos [3] <- 7
+pontos [4] <- 5
+pontos [5] <- 0
+
+gols [1,1] <- 10
+gols [1,2] <- 2
+gols [2,1] <- 15
+gols [2,2] <- 8
+gols [3,1] <- 7
+gols [3,2] <- 1
+gols [4,1] <- 8
+gols [4,2] <- 10
+gols [5,1] <- 5
+gols [5,2] <- 11
+
+
+
+//TABELA
+
+Escreval ("               TABELA               ")
+Escreval ("")
+PARA x de 1 até 5 faca
+
+Escreva (x, ") Seleção: ", selecao[x])
+
+Escreval ("")
+
+Fimpara
+
+//ESCOLHA DO TIME
+
+Escreval ("")
+Escreval ("Escolha o N° de um dos times para exibir seus dados")
+leia (resposta)
+
+Se (resposta > 5) entao
+Escreval ("")
+Escreval ("Seleção não encontrada, TENTE NOVAMENTE!")
+Leia (resposta)
+Fimse
+
+limpatela
+
+//SALDO DE GOLS
+
+Escreval ("SELEÇÃO: ", selecao[resposta])
+Escreval ("")
+Escreval ("Pontos:          ", pontos[resposta])
+Escreval ("Gols Feitos:     ", gols[resposta,1])
+Escreval("Gols Sofridos:   ", gols[resposta,2])
+saldo <- gols[resposta,1] - gols[resposta,2]
+Escreval ("")
+Escreval ("Saldo de Gols  ", ": ", saldo)
+
+Fimalgoritmo
